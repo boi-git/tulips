@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".signUp-form").hide();
+        $(".signUp").css("background","#f0f0f0");
+
+        $(".signIn").click(function(){
+          $(".signUp-form").hide();
+          $(".signIn-form").show();
+          $(".signUp").css("background","#f0f0f0");
+          $(".signIn").css("background","#fff");
+        });
+
+        $(".signUp").click(function(){
+          $(".signUp-form").show();
+          $(".signIn-form").hide();
+          $(".signUp").css("background","#fff");
+          $(".signIn").css("background","#f0f0f0");
+        });
+      });
+    </script>
+
+  </head>
+  <body>
+
+    <div class="grid-container">
+      <div class="header">
+        <div class="container">
+            <nav>
+              <div class="logo">
+                    <a href="index.html"><mark class="orange">AB</mark></a>
+
+
+              </div>
+                  <input type="checkbox" id="nav" class="hidden">
+                  <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                  </label>
+                  <div class="sya">
+                    <!-- Tab Menu Sign in and Sign up -->
+                    <div class="container-display">
+                      <div class="signIn">Sign In</div>
+                      <div class="signUp">Sign Up</div>
+                    </div>
+                    <!-- Container body -->
+                    <div class="main">
+                        <!-- Sign in -->
+                      <div class="container-sya">
+                        <div class="signIn-form">
+                          <h2>Sign In</h2>
+                          <form action="#" method="get">
+                            <input type="text" class="input-box" placeholder="Username" name="username" required><br>
+                            <input type="password" class="input-box" placeholder="Password" password="username" required><br>
+                            <input style="float: left; margin: 10px 10px 10px 0;" type="checkbox"><span style="font-size: 13px; float: left; margin: 7px 10px 10px 0;">Remember password</span>
+                            <table width="100%">
+                              <tr>
+                                <td><button onclick="window.location.href='index.html';" class="back">Back</button>
+                                <input onclick="window.location.href='index2.html';" type="submit" value="Sign In"></td>
+                              </tr>
+                            </table>
+                            <p>You don't have an account? Do sign up!</p>
+                            </form>
+                        </div>
+                        <!-- Sign Up -->
+                        <div class="signUp-form">
+                          <h2>Sign Up</h2>
+                          <form action="#" method="get">
+                            <input type="text" class="input-box" placeholder="Username" required><br>
+                            <input type="text" class="input-box" placeholder="Email" required><br>
+                            <input type="password" class="input-box" placeholder="Password" required><br>
+                            <input style="float: left; margin: 10px 10px 10px 0;" type="checkbox"><span style="font-size: 13px; float: left; margin: 7px 10px 10px 0;">I agree to the Terms & Condition</span>
+                            <table width="100%">
+                              <tr>
+                                <td><button class="back" onclick="window.location.href='index.html';">Back</button>
+                                <input type="submit" value="Sign Up" onclick="window.location.href='member.html';"></td>
+                              </tr>
+                            </table>
+                            <p>You already have an account? <div onclick="window.location.href='member.html';" style="cursor: -webkit-pointer; cursor: pointer;">Sign In</div></p>
+                            </form>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="sub">
+                    </div>
+                  </div>
+                  <div class="bar-right">
+                      <a class="arrow arrow-next1" href="index.html"></a>
+                  </div>
+            </nav>
+      </div>
+    </div>
+
+<div class="footer">
+
+<table>
+  <tbody>
+    <tr>
+		<th><a href="aboutUS2.html">About Us</a></th>
+		<td class="p1"></td>
+		<th><a href="contactUs2.html">Contact Us</a></th>
+    </tr>
+    <tr>
+			<td>Audiook | Privacy Policy | Terms & Condition</td>
+			<td class="p1"></td>
+			<td>+123456789 | audiook@gmail.com</td>
+		</tr>
+  </tbody>
+</table>
+
+
+</div>
+
+
+
+    </div>
+
+  </body>
+</html>
