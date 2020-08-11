@@ -12,6 +12,14 @@ switch (res) {
     para.style.color = "blue";
     para.href = "mp3/action.rar";
     para.download = "action.rar"
+    para.style.fontSize="30px";
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "img/act.png");
+    x.setAttribute("width", "150");
+    x.setAttribute("height", "150");
+    x.style.float="left";
+
+    document.getElementById("pop1").appendChild(x);
     document.getElementById("pop1").appendChild(para);
 
 
@@ -25,6 +33,13 @@ switch (res) {
     para.style.color = "blue";
     para.href = "mp3/fantasy.rar";
     para.download = "fantasy.rar"
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "img/fan.png");
+    x.setAttribute("width", "150");
+    x.setAttribute("height", "150");
+    x.style.float="left";
+
+    document.getElementById("pop1").appendChild(x);
     document.getElementById("pop1").appendChild(para);
 
     break;
@@ -37,6 +52,13 @@ switch (res) {
     para.style.color = "blue";
     para.href = "mp3/horror.rar";
     para.download = "horror.rar"
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "img/hor.png");
+    x.setAttribute("width", "150");
+    x.setAttribute("height", "150");
+    x.style.float="left";
+
+    document.getElementById("pop1").appendChild(x);
     document.getElementById("pop1").appendChild(para);
     break;
   case "romance":
@@ -48,6 +70,13 @@ switch (res) {
     para.style.color = "blue";
     para.href = "mp3/romance.rar";
     para.download = "romance.rar"
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "img/rom.png");
+    x.setAttribute("width", "150");
+    x.setAttribute("height", "150");
+    x.style.float="left";
+
+    document.getElementById("pop1").appendChild(x);
     document.getElementById("pop1").appendChild(para);
     break;
   case "scifi":
@@ -59,7 +88,11 @@ switch (res) {
     para.style.color = "blue";
     para.href = "mp3/scifi.rar";
     para.download = "scifi.rar"
-    document.getElementById("pop1").appendChild(para);
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "img/sci.png");
+    x.setAttribute("width", "150");
+    x.setAttribute("height", "150");
+    x.style.float="left";
     break;
 
   default:
