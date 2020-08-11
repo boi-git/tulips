@@ -1,80 +1,100 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="style.css">
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
-      <title></title>
-   </head>
-   <body>
-
-      <div class="grid-container">
-         <div class="header">
-            <div class="container">
-               <nav>
-                  <div class="logo">
-                     <a href="index2.html"><mark class="orange">AB</mark></a>
-                  </div>
-                  <input type="checkbox" id="nav" class="hidden">
-                  <label for="nav" class="nav-btn">
-                  <i></i>
-                  <i></i>
-                  <i></i>
-                  </label>
-                  <div class="nav-wrapper">
-                        <ul>
-                              <li><a href="index2.html">Home</a></li>
-                              <li><a href="sub.html">Overview</a></li>
-                              <li><a href="index.html">Log out</a></li>
-                        </ul>
-                  </div>
+var res = localStorage.getItem("type");
+console.log(res);
+switch (res) {
+  case "action":
 
 
-  <div class="help">
-                  <div class="main" >
-                    <h1>Audi<mark class="orange">ook</mark></h1>
+    var para = document.createElement("a");
+    var node = document.createTextNode("Click here to download " + res);
+    para.appendChild(node);
+    para.style.marginLeft = "20px";
+    para.style.marginTop = "20px";
+    para.style.color = "blue";
+    para.href = "mp3/action.rar";
+    para.download = "action.rar"
+    para.style.fontSize="30px";
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "img/act.png");
+    x.setAttribute("width", "150");
+    x.setAttribute("height", "150");
+    x.style.float="left";
 
-                  <div id="pop1">
-
-                      <p id="demo">Thank you for buying our <mark class="orange">product</mark</p>
-                    </div>
+    document.getElementById("pop1").appendChild(x);
+    document.getElementById("pop1").appendChild(para);
 
 
-                      </div>
+    break;
+  case "fantasy":
+    var para = document.createElement("a");
+    var node = document.createTextNode("Click here to download " + res);
+    para.appendChild(node);
+    para.style.marginLeft = "20px";
+    para.style.marginTop = "20px";
+    para.style.color = "blue";
+    para.href = "mp3/fantasy.rar";
+    para.download = "fantasy.rar"
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "img/fan.png");
+    x.setAttribute("width", "150");
+    x.setAttribute("height", "150");
+    x.style.float="left";
 
+    document.getElementById("pop1").appendChild(x);
+    document.getElementById("pop1").appendChild(para);
 
+    break;
+  case "horror":
+    var para = document.createElement("a");
+    var node = document.createTextNode("Click here to download " + res);
+    para.appendChild(node);
+    para.style.marginLeft = "20px";
+    para.style.marginTop = "20px";
+    para.style.color = "blue";
+    para.href = "mp3/horror.rar";
+    para.download = "horror.rar"
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "img/hor.png");
+    x.setAttribute("width", "150");
+    x.setAttribute("height", "150");
+    x.style.float="left";
 
-  </div>
-            </div>
-            <div class="sub">
+    document.getElementById("pop1").appendChild(x);
+    document.getElementById("pop1").appendChild(para);
+    break;
+  case "romance":
+    var para = document.createElement("a");
+    var node = document.createTextNode("Click here to download " + res);
+    para.appendChild(node);
+    para.style.marginLeft = "20px";
+    para.style.marginTop = "20px";
+    para.style.color = "blue";
+    para.href = "mp3/romance.rar";
+    para.download = "romance.rar"
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "img/rom.png");
+    x.setAttribute("width", "150");
+    x.setAttribute("height", "150");
+    x.style.float="left";
 
+    document.getElementById("pop1").appendChild(x);
+    document.getElementById("pop1").appendChild(para);
+    break;
+  case "scifi":
+    var para = document.createElement("a");
+    var node = document.createTextNode("Click here to download " + res);
+    para.appendChild(node);
+    para.style.marginLeft = "20px";
+    para.style.marginTop = "20px";
+    para.style.color = "blue";
+    para.href = "mp3/scifi.rar";
+    para.download = "scifi.rar"
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "img/sci.png");
+    x.setAttribute("width", "150");
+    x.setAttribute("height", "150");
+    x.style.float="left";
+    break;
 
-
-            </div>
-            <div class="bar">
-
-            </div>
-            </nav>
-         </div>
-      </div>
-      <div class="footer">
-         <table>
-            <tbody>
-               <tr>
-					<th><a href="aboutUS.html">About Us</a></th>
-					<td class="p1"></td>
-					<th><a href="contactUs.html">Contact Us</a></th>
-               </tr>
-               <tr>
-           			<td>Audiook | Privacy Policy | Terms & Condition</td>
-           			<td class="p1"></td>
-           			<td>+123456789 | audiook@gmail.com</td>
-           		</tr>
-            </tbody>
-         </table>
-      </div>
-      </div>
-      <script src="pay.js" ></script>
-   </body>
-</html>
+  default:
+    // code block
+}
